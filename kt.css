@@ -1,0 +1,290 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.khungtren{
+	position: relative;
+}
+.tc{
+	position: absolute;
+	list-style: none;
+    background-color: #cecece;
+	width: 100%;
+	height: 39px;
+	top: 230px;
+   	left: 390px;
+   	opacity: 0;
+   	z-index: 1;
+   	display: block;
+   	animation-name:a2;
+   	animation-duration: 11s;
+   	animation-delay: 10s;
+   	z-index: 1;
+   	animation-timing-function: linear;
+   	animation-fill-mode: forwards;
+}
+.tc > li a{
+	text-decoration: none;
+    background-color: #cecece;
+    color: #653cad;
+	border-right: 1px solid white;
+	padding: 10px;
+	font-size: 16px;
+}
+.tc li{
+	float: left;
+	margin: 9px -5px;
+}
+.tc > li:hover a{
+	background-color: gray;
+	color: white;
+	border-bottom: 2px solid red;
+}
+.khungduoi{
+	position: absolute;
+	width: 1043px;
+	height: 500px;
+	margin: 65px;
+	border: 1px solid #bbb4b4;
+}
+.khungnho1{
+	width: 337px;
+	height: 500px;
+	overflow-y:scroll;
+	transition: 1s;
+	float: left;
+	background-color: white;
+    margin-right: 10px;
+}
+.khungnho2{
+	width: 337px;
+	height: 500px;
+	overflow-y:scroll;
+	transition: 1s;
+	float: left;
+	background-color: white;
+    margin-right: 10px;
+}
+.tc2{
+	list-style: none;
+}
+.tc2 > li{
+	float: left;
+	margin: 10px 5px;
+}
+.tc2 > li a{
+	text-decoration: none;
+    color: #653cad;
+	font-size: 16px;
+}
+.tc2 > li:hover > a{
+	color: blue;
+}
+.hinh{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	width: 320px;
+	height: 200px;
+	margin: 10px;
+	overflow: hidden;
+}
+img{
+	position: absolute;
+	width: 320px;
+	height: 200px;
+	margin: 10px;
+	top: 0px;
+	left: -10px;
+	transition: 1s;
+}
+.khuonmo{
+	position: absolute;
+	width: 320px;
+	height: 200px;
+	margin: 10px;
+	opacity: 0;
+	top: 0px;
+	left: -10px;
+	background-color: #80808094;
+	opacity: 0;
+	transition: 1s;
+}
+.hinh:hover img{
+	transform: scale(1.1);
+	transition: 1s;
+}
+.hinh:hover .khuonmo{
+	opacity: 1;
+	transform: scale(1.1);
+	transition: 1s;
+}
+.noidung{
+	margin-left: 10px;
+    margin-top: 0px;
+    padding-top: 10px
+}
+h1{
+	font-size: 20px;
+	color: #653cad;
+	margin-bottom: 10px;
+}
+p{
+	text-align: justify;
+	margin-bottom: 10px;
+}
+a{
+	text-decoration: none;
+	margin: 5px;
+	color: gray;
+}
+hr{
+	margin-top: 10px;
+	border: 1px solid red;
+}
+h1:hover{
+	color: red;
+}
+.khungnho1::-webkit-scrollbar{
+	width: 0px;
+	height: 0px;
+}
+.khungnho2::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+}
+.khungnho2::-webkit-scrollbar-thumb{
+	background-color: #ffb500;
+}
+.khungnho2::-webkit-scrollbar-track{
+	background-color: #ccc9c9;
+}
+.khungnho1:hover{
+	transform: scale(1.1);
+	transition: 1s;
+	box-shadow: 0px 2px 21px 2px;
+	border: 1px solid #8a8484;
+}
+.khungnho2:hover{
+	transform: scale(1.1);
+	transition: 1s;
+	box-shadow: 0px 2px 21px 2px;
+	border: 1px solid #8a8484;
+}
+.tc2 > .gd{
+	display: inline-block;
+	border-bottom: 1px solid red;
+}
+.tieude{
+	position: absolute;
+	padding: 10px;
+    top: 230px;
+    left: 390px;
+    width: 460px;
+    height: 30px; 
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: green;
+    animation-name: a1;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    opacity: 0;
+}
+p{
+	display: block;
+	text-align: center;
+}
+.khunglonduoi{
+	position: relative;
+}
+@keyframes a1{
+	0%{
+		top: 230px;
+    	left: 390px;
+		opacity: 1;
+		transform: scale(0);
+	}
+	15%{
+   		top: 230px;
+    	left: 390px;
+   		opacity: 1;
+   		transform: scale(1);
+
+	}
+	30%{
+		top: 0px;
+    	left: 390px;
+		opacity: 1;    
+  		transform: scale(1);	
+	}
+	50%{
+		top: 0px;
+    	left: -50px;
+		opacity: 1;
+  		transform: scale(1);
+  		background-color: orange;
+	}
+	70%{
+		top: 0px;
+    	right: 0px;
+		opacity: 1;
+		transform: scale(1);
+		background-color: orange;
+		border-radius: 30px;
+	}
+	80%{
+		top: 0px;
+    	left: 80%;
+   		opacity: 1;
+   		transform: scale(1);
+		background-color: orange;
+		border-radius: 30px;
+	}
+	100%{
+		top: 0px;
+    	left: 390px;
+		opacity: 1;
+		transform: scale(0);
+		background-color: orange;
+		border-radius: 30px;
+	}
+
+}
+@keyframes a2{
+	0%{
+		top: 230px;
+    	left: 370px;
+		opacity: 1;
+		transform: scale(0);
+		background-color: #cecece54;
+	}
+	30%{
+		top: 230px;
+    	left: 350px;
+		opacity: 1;
+		transform: scale(1);
+	}
+	50%{
+		top: 0px;
+    	left: 350px;
+		opacity: 1;
+		transform: scale(1);
+		background-color: #cecece;
+
+	}
+	70%{
+		top: 0px;
+    	left: 80%;
+		opacity: 1;
+		transform: scale(1);
+	}
+	100%{	
+		top: 0px;
+    	left: 0px;
+		opacity: 1;
+	}
+}
+.mau{
+	color: #cca01f;
+}
